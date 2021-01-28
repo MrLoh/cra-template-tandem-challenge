@@ -20,7 +20,8 @@
       "trailingComma": "all",
       "arrowParens": "always",
       "endOfLine": "auto",
-      "quoteProps": "consistent"
+      "quoteProps": "consistent",
+      "printWidth": 100
     }
   }
 }

@@ -15,9 +15,7 @@ const createMockServer = (env = 'test') => {
     models: { dataSet: Model },
     factories: {
       dataSet: Factory.extend({
-        values: Array.from({ length: 10 }, () =>
-          Math.floor(Math.random() * 100),
-        ),
+        values: Array.from({ length: 10 }, () => Math.floor(Math.random() * 100)),
       }),
     },
 
@@ -30,22 +28,21 @@ const createMockServer = (env = 'test') => {
     routes() {
       this.namespace = '/';
 
-      this.get('data-set/:id');
+      this.get('data-set/:id', (schema, { params }) => {
+        const dataSet = schema.findBy('dataSet', { id: params.id });
+        if (!dataSet) return new Response(404);
+        return new Response(200, {}, { id: dataSet.id, values: dataSet.values });
+      });
 
       this.post('data-set/:id', (schema, { params, requestBody }) => {
         const dataSet = schema.findBy('dataSet', { id: params.id });
-        if (!dataSet) {
-          return new Response(404);
-        }
+        if (!dataSet) return new Response(404);
         const body = parseJson(requestBody);
-        if (!body) {
-          return new Response(400, undefined, { error: 'invalid json' });
-        }
-        if (!body.value) {
-          return new Response(400, undefined, { error: 'missing value' });
-        }
+        if (!body) return new Response(400, {}, { error: 'invalid json' });
+        if (!body.value) return new Response(400, {}, { error: 'missing value' });
+        if (!Number.isInteger(body.value)) return new Response(400, {}, { error: 'invalid value' });
         dataSet.update('values', [...dataSet.values, body.value]);
-        return new Response(200);
+        return new Response(200, {}, { value: body.value });
       });
     },
   });
