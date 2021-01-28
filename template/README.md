@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Tandem Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with the [Tandem Challenge Create React App Template](https://github.com/MrLoh/cra-template-tandem-challenge).
+
+## Mock API
+
+The template provides a [Mirage](https://miragejs.com) mock APi which is seeded with 2 data sets with ids "1234" and "4321". Mirage will intercept any requests, so you fetch data by simply using `fetch('/data-set/1234')` for example. There is also a POST endpoint provided, see `src/mockServer.test.ts` for more information.
 
 ## Available Scripts
 
-In the project directory, you can run:
+Otherwise this is a regular Create React App project with typescript.
 
-### `npm start`
+Run `yarn start` to run the app in development mode on [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Run `yarn test` to run the tests, [React Testing Library](https://testing-library.com/docs/react-testing-library/) is already set up.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Guidance
 
-### `npm test`
+The appearance of the app and implementation approach are up to you. Try to keep the dependencies to a minimum and focus on a clean and readable implementation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The code challenge should take between 2 and 6 hours. Please track you time, commit regularly, and don't over engineer the solution (a kitchen sink approach will not impress us). Prioritize your time on what you think are the most important aspects (there is no right or wrong answer) and document your decisions in the readme. If you need extra time for cleanup, documentation, or to fix bugs, that is fine.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+When done, upload your application to a private GitHub repo and add [@Mrloh](https://github.com/MrLoh) and [@brandall10](https://github.com/brandall10) as collaborators.

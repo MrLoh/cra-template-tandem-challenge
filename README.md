@@ -1,20 +1,7 @@
-# cra-template-typescript
+# Tandem Code Challenge Create React App Template
 
-This is the official TypeScript template for [Create React App](https://github.com/facebook/create-react-app).
+This is a Create React App template for the Tandem code challenge. It was bootstrapped from the official [TypeScript template](https://github.com/facebook/create-react-app) and amended with a mock API to use.
 
-To use this template, add `--template typescript` when creating a new app.
+To use this template, run `npx create-react-app my-app --template tandem-challenge`
 
-For example:
-
-```sh
-npx create-react-app my-app --template typescript
-
-# or
-
-yarn create react-app my-app --template typescript
-```
-
-For more information, please refer to:
-
-- [Getting Started](https://create-react-app.dev/docs/getting-started) – How to create a new app.
-- [User Guide](https://create-react-app.dev) – How to develop apps bootstrapped with Create React App.
+For more info on how to contribute to this template go to the [Create React App documentation](https://create-react-app.dev/docs/custom-templates/)

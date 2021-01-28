@@ -1,6 +1,6 @@
 {
   "name": "cra-template-tandem-challenge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create React App template for the Tandem code challenge",
   "repository": {
     "type": "git",
@@ -19,6 +19,5 @@
     "arrowParens": "always",
     "endOfLine": "auto",
     "quoteProps": "consistent"
-  },
-  "private": true
+  }
 }
