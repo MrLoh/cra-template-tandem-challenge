@@ -13,6 +13,13 @@
     },
     "eslintConfig": {
       "extends": ["react-app", "react-app/jest"]
+    },
+    "prettier": {
+      "singleQuote": true,
+      "trailingComma": "all",
+      "arrowParens": "always",
+      "endOfLine": "auto",
+      "quoteProps": "consistent"
     }
   }
 }

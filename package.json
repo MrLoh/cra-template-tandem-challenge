@@ -13,5 +13,12 @@
     "template",
     "template.json"
   ],
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "endOfLine": "auto",
+    "quoteProps": "consistent"
+  },
   "private": true
 }
