@@ -19,5 +19,3 @@ Run `yarn test` to run the tests, [React Testing Library](https://testing-librar
 The appearance of the app and implementation approach are up to you. Try to keep the dependencies to a minimum and focus on a clean and readable implementation.
 
 The code challenge should take between 2 and 6 hours. Please track you time, commit regularly, and don't over engineer the solution (a kitchen sink approach will not impress us). Prioritize your time on what you think are the most important aspects (there is no right or wrong answer) and document your decisions in the readme. If you need extra time for cleanup, documentation, or to fix bugs, that is fine.
-
-When done, upload your application to a private GitHub repo and add [@Mrloh](https://github.com/MrLoh) and [@brandall10](https://github.com/brandall10) as collaborators.
